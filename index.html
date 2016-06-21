@@ -123,12 +123,20 @@
 					'Hvad er du mest stolt af?',
 					'Hvis du var pænt træt, pænt sulten og pænt klam. Hvad ville ud så gøre først? Gå i bad, sove eller spise?',
 					'Hvad er den bedste gave du nogensinde har givet?',
-					'Hvordan mødte du din bedste ven/veninde?'
-				]
+					'Hvordan mødte du din bedste ven/veninde?',
+					'Hvilken magisk/superkræft ville du ønske du havde og hvorfor?',
+					'Hvad beundrer du mest hos andre/Hvad irriterer dig mest ved andre?',
+					'Hvis du kunne vælge imellem alle i verden, hvem ville så helst spise middag med?',
+					'Hvis man kvæler en smølf, hvad farve får den så i hovedet?',
+					'Hvis du var en gulerod i et eventyr hvad ville din nemesis så hedde?',
+					'Hvorfor arbejder du med det, du arbejder med?'
+				];
+				
 				function pickRandomQuestion(questions) {
 					var question = questions[Math.floor(Math.random() * questions.length)];
 					return question;
 				}
+				
 				function displayQuestion() {
 					var question = pickRandomQuestion(questions);
 					questionElement.innerHTML = question;
@@ -147,7 +155,6 @@
 				httpRequest.open('GET', 'http://www.example.org/some.file', true);
 				httpRequest.send(null);
 				*/
-
 			})();
         </script>
 	</body>
